@@ -1,7 +1,8 @@
 import React from 'react';
 import './style.scss';
 
-const Header = () => {
+const Header = (props) => {
+  const { count } = props;
   return (
     <div className="main">
       <div className="story">Store</div>
@@ -10,7 +11,7 @@ const Header = () => {
           &#xf07a;
         </i>
         <span className="badge badge-warning" id="lblCartCount">
-          5
+          {count}
         </span>
       </div>
     </div>

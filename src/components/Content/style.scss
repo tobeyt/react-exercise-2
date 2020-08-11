@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+
+.title {
+  margin: 30px 20px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.phone-content {
+  display: flex;
+  justify-content: space-between;
+
+  .phone {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0 20px 20px 20px;
+    .phone-title {
+      margin-bottom: 25px;
+    }
+    .price-and-addbutton {
+      display: flex;
+      justify-content: space-between;
+      .phone-price {
+        font-size: 17px;
+      }
+      button{
+        color: $white;
+        background-color: $support-blue;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover{
+        background-color: $second-blue;
+      }
+    }
+  }
+
+  img {
+    width: 150px;
+  }
+}
