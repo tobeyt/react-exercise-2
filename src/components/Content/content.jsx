@@ -5,13 +5,15 @@ import './style.scss';
 const Content = (props) => {
   const { title, data, addCard } = props;
 
+  const phone = data.filter((cur) => cur.category === title);
+
   return (
     <>
       <div className="title">{title}</div>
       <div className="phone-content">
-        {data.map((cur) => (
+        {phone.map((cur) => (
           <div className="phone">
-            <div className="phone-title">{cur.category}</div>
+            <div className="phone-title">{cur.name}</div>
             <img src={placeholder} alt="placeholder" />
             <div className="price-and-addbutton">
               <div className="phone-price">{cur.price}</div>
