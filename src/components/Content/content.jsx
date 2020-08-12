@@ -11,8 +11,8 @@ const Content = (props) => {
     <>
       <div className="title">{title}</div>
       <div className="phone-content">
-        {phone.map((cur) => (
-          <div className="phone">
+        {phone.map((cur, index) => (
+          <div className="phone" key={index}>
             <div className="phone-title">{cur.name}</div>
             <img src={placeholder} alt="placeholder" />
             <div className="price-and-addbutton">

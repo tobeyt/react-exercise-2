@@ -7,10 +7,10 @@ const Header = (props) => {
     <div className="main">
       <div className="story">Store</div>
       <div className="logo">
-        <i class="fa" style={{ fontSize: 30 }}>
+        <i className="fa" style={{ fontSize: 30 }}>
           &#xf07a;
         </i>
-        <span className="badge badge-warning" id="lblCartCount">
+        <span>
           {count}
         </span>
       </div>
